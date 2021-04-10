@@ -1,34 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SQL AW</title>
+	<title>SQL Terms</title>
 	<link rel="stylesheet" href="sql_aw.css">
 </head>
 <body>
-	<script src="sql_aw.js"></script>
-	
-	<button type="button" onclick="changeColor()" id="firstButton">SQL</button>
-	
-	<button type="button" onclick="changeColorselect()" id="select">select</button>
-	<button type="button" onclick="changeColorupdate()" id="update">update</button>
-	<button type="button" onclick="changeColordelete()" id="delete">delete</button>
-	<button type="button" onclick="changeColorinsertinto()" id="insert into">insert into</button>
-	<button type="button" onclick="changeColorcreatedatabase()" id="create database">create database</button>
-	<button type="button" onclick="changeColoralterdatabase()" id="alter database">alter database</button>
-	<button type="button" onclick="changeColorcreatetable()" id="create table">create table</button>
-	<button type="button" onclick="changeColoraltertable()" id="alter table">alter table</button>
-	<button type="button" onclick="changeColordroptable()" id="drop table">drop table</button>
-	<button type="button" onclick="changeColorcreateindex()" id="create index">create index</button>
-	<button type="button" onclick="changeColordropindex()" id="drop index">drop index</button>
-	<button type="button" onclick="changeColorfrom()" id="from">from</button>
-	<button type="button" onclick="changeColorselectdistinct()" id="select distinct">select distinct</button>
-	<button type="button" onclick="changeColorwhere()" id="where">where</button>
-	<button type="button" onclick="changeColorandorandnot()" id="and, or and not">and, or and not</button>
-	<button type="button" onclick="changeColororderby()" id="order by">order by</button>
-	<button type="button" onclick="changeColordesc()" id="desc">desc</button>
-	<button type="button" onclick="changeColorasc()" id="asc">asc</button>
+	<script src = "sql_aw.js"></script>
 
+	<button type="button" onclick="change_color_select()" id="select">select</button>
+	<button type="button" onclick="change_color_update()" id="update">update</button>
+	<button type="button" onclick="change_color_delete()" id="delete">delete</button>
+	<button type="button" onclick="change_color_insert_into()" id="insert_into">insert into</button>
+	<button type="button" onclick="change_color_values()" id="values">values</button>
+	<button type="button" onclick="change_color_create_database()" id="create_database">create database</button>
+	<button type="button" onclick="change_color_alter_database()" id="alter_database">alter database</button>
+	<button type="button" onclick="change_color_drop_database()" id="drop_database">drop database</button>
+	<button type="button" onclick="change_color_create_table()" id="create_table">create table</button>
+	<button type="button" onclick="change_color_alter_table()" id="alter_table">alter table</button>
+	<button type="button" onclick="change_color_alter()" id="alter">alter</button>
+	<button type="button" onclick="change_color_drop_column()" id="drop_column">drop column</button>
+	<button type="button" onclick="change_color_alter_column()" id="alter_column">alter column</button>
+	<button type="button" onclick="change_color_add()" id="add">add</button>
+	<button type="button" onclick="change_color_drop_table()" id="drop_table">drop table</button>
+	<button type="button" onclick="change_color_create_index()" id="create_index">create index</button>
+	<button type="button" onclick="change_color_drop_index()" id="drop_index">drop index</button>
+	<button type="button" onclick="change_color_from()" id="from">from</button>
+	<button type="button" onclick="change_color_select_distinct()" id="select_distinct">select distinct</button>
+	<button type="button" onclick="change_color_where()" id="where">where</button>
+	<button type="button" onclick="change_color_and()" id="and">and</button>
+	<button type="button" onclick="change_color_or()" id="or">or</button>
+	<button type="button" onclick="change_color_not()" id="not">not</button>
+	<button type="button" onclick="change_color_some()" id="some">some</button>
+	<button type="button" onclick="change_color_order_by()" id="order_by">order by</button>
+	<button type="button" onclick="change_color_desc()" id="desc">desc</button>
+	<button type="button" onclick="change_color_asc()" id="asc">asc</button>
+	<button type="button" onclick="change_color_is()" id="is">is</button>
+	<button type="button" onclick="change_color_as()" id="as">as</button>
+	<button type="button" onclick="change_color_null()" id="null">null</button>
+	<button type="button" onclick="change_color_set()" id="set">set</button>
+	<button type="button" onclick="change_color_top()" id="top">top</button>
+	<button type="button" onclick="change_color_percent()" id="percent">percent</button>
+	<button type="button" onclick="change_color_min()" id="min">min</button>
+	<button type="button" onclick="change_color_max()" id="max">max</button>
+	<button type="button" onclick="change_color_count()" id="count">count</button>
+	<button type="button" onclick="change_color_avg()" id="avg">avg</button>
+	<button type="button" onclick="change_color_sum()" id="sum">sum</button>
+	<button type="button" onclick="change_color_like()" id="like">like</button>
+	<button type="button" onclick="change_color_in()" id="in">in</button>
+	<button type="button" onclick="change_color_between()" id="between">between</button>
+	<button type="button" onclick="change_color_inner_join()" id="inner_join">inner join</button>
+	<button type="button" onclick="change_color_left_join()" id="left_join">left join</button>
+	<button type="button" onclick="change_color_right_join()" id="right_join">right join</button>
+	<button type="button" onclick="change_color_full_outer_join()" id="full_outer_join">full outer join</button>
+	<button type="button" onclick="change_color_on()" id="on">on</button>
+	<button type="button" onclick="change_color_union()" id="union">union</button>
+	<button type="button" onclick="change_color_group_by()" id="group_by">group by</button>
+	<button type="button" onclick="change_color_having()" id="having">having</button>
+	<button type="button" onclick="change_color_exists()" id="exists">exists</button>
+	<button type="button" onclick="change_color_any()" id="any">any</button>
+	<button type="button" onclick="change_color_all()" id="all">all</button>
+	<button type="button" onclick="change_color_select_into()" id="select_into">select into</button>
+	<button type="button" onclick="change_color_insert_into_select()" id="insert_into_select">insert into select</button>
+	<button type="button" onclick="change_color_case()" id="case">case</button>
+	<button type="button" onclick="change_color_when()" id="when">when</button>
+	<button type="button" onclick="change_color_then()" id="then">then</button>
+	<button type="button" onclick="change_color_else()" id="else">else</button>
+	<button type="button" onclick="change_color_end()" id="end">end</button>
+	<button type="button" onclick="change_color_ifnull()" id="ifnull">ifnull</button>
+	<button type="button" onclick="change_color_isnull()" id="isnull">isnull</button>
+	<button type="button" onclick="change_color_coalesce()" id="coalesce">coalesce</button>
+	<button type="button" onclick="change_color_create_procedure()" id="create_procedure">create procedure</button>
+	<button type="button" onclick="change_color_go()" id="go">go</button>
+	<button type="button" onclick="change_color_exec()" id="exec">exec</button>
+	<button type="button" onclick="change_color_backup_database()" id="backup_database">backup database</button>
+	<button type="button" onclick="change_color_to_disk()" id="to_disk">to disk</button>
+	<button type="button" onclick="change_color_with()" id="with">with</button>
+	<button type="button" onclick="change_color_differential()" id="differential">differential</button>
+	<button type="button" onclick="change_color_truncate_table()" id="truncate_table">truncate table</button>
+	<button type="button" onclick="change_color_unique()" id="unique">unique</button>
+	<button type="button" onclick="change_color_primary_key()" id="primary_key">primary key</button>
+	<button type="button" onclick="change_color_constraint()" id="constraint">constraint</button>
+	<button type="button" onclick="change_color_foreign_key()" id="foreign_key">foreign key</button>
+	<button type="button" onclick="change_color_references()" id="references">references</button>
+	<button type="button" onclick="change_color_check()" id="check">check</button>
+	<button type="button" onclick="change_color_default()" id="default">default</button>
+	<button type="button" onclick="change_color_getdate()" id="getdate">getdate</button>
+	<button type="button" onclick="change_color_auto_increment()" id="auto_increment">auto increment</button>
+	<button type="button" onclick="change_color_identity()" id="identity">identity</button>
+	<button type="button" onclick="change_color_date()" id="date">date</button>
+	<button type="button" onclick="change_color_datetime()" id="datetime">datetime</button>
+	<button type="button" onclick="change_color_timestamp()" id="timestamp">timestamp</button>
+	<button type="button" onclick="change_color_year()" id="year">year</button>
+	<button type="button" onclick="change_color_smalldatetime()" id="smalldatetime">smalldatetime</button>
+	<button type="button" onclick="change_color_create_view()" id="create_view">create view</button>
+	<button type="button" onclick="change_color_create_or_replace_view()" id="create_or_replace_view">create or replace view</button>
+	<button type="button" onclick="change_color_drop_view()" id="drop_view">drop view</button>
+	<button type="button" onclick="change_color_sql_injection()" id="sql_injection">sql injection</button>
+	<button type="button" onclick="change_color_sql_parameters()" id="sql_parameters">sql parameters</button>
+	<button type="button" onclick="change_color_sql_hosting()" id="sql_hosting">sql hosting</button>
+	<button type="button" onclick="change_color_ms_sql_server()" id="ms_sql_server">ms sql server</button>
+	<button type="button" onclick="change_color_mysql()" id="mysql">mysql</button>
+	<button type="button" onclick="change_color_ms_access()" id="ms_access">ms access</button>
+	<button type="button" onclick="change_color_oracle()" id="oracle">oracle</button>
+	<button type="button" onclick="change_color_char()" id="char">char</button>
+	<button type="button" onclick="change_color_varchar()" id="varchar">varchar</button>
+	<button type="button" onclick="change_color_binary()" id="binary">binary</button>
+	<button type="button" onclick="change_color_varbinary()" id="varbinary">varbinary</button>
+	<button type="button" onclick="change_color_tinyblob()" id="tinyblob">tinyblob</button>
+	<button type="button" onclick="change_color_tinytext()" id="tinytext">tinytext</button>
+	<button type="button" onclick="change_color_text()" id="text">text</button>
+	<button type="button" onclick="change_color_blob()" id="blob">blob</button>
+	<button type="button" onclick="change_color_mediumtext()" id="mediumtext">mediumtext</button>
+	<button type="button" onclick="change_color_mediumblob()" id="mediumblob">mediumblob</button>
+	<button type="button" onclick="change_color_longtext()" id="longtext">longtext</button>
+	<button type="button" onclick="change_color_longblob()" id="longblob">longblob</button>
+	<button type="button" onclick="change_color_enum()" id="enum">enum</button>
+	<button type="button" onclick="change_color_bit()" id="bit">bit</button>
+	<button type="button" onclick="change_color_tinyint()" id="tinyint">tinyint</button>
+	<button type="button" onclick="change_color_bool()" id="bool">bool</button>
+	<button type="button" onclick="change_color_boolean()" id="boolean">boolean</button>
+	<button type="button" onclick="change_color_smallint()" id="smallint">smallint</button>
+	<button type="button" onclick="change_color_mediumint()" id="mediumint">mediumint</button>
+	<button type="button" onclick="change_color_int()" id="int">int</button>
+	<button type="button" onclick="change_color_integer()" id="integer">integer</button>
+	<button type="button" onclick="change_color_bigint()" id="bigint">bigint</button>
+	<button type="button" onclick="change_color_float()" id="float">float</button>
+	<button type="button" onclick="change_color_double()" id="double">double</button>
+	<button type="button" onclick="change_color_double_precision()" id="double_precision">double precision</button>
+	<button type="button" onclick="change_color_decimal()" id="decimal">decimal</button>
+	<button type="button" onclick="change_color_dec()" id="dec">dec</button>
+	<button type="button" onclick="change_color_nchar()" id="nchar">nchar</button>
+	<button type="button" onclick="change_color_nvarchar()" id="nvarchar">nvarchar</button>
+	<button type="button" onclick="change_color_ntext()" id="ntext">ntext</button>
+	<button type="button" onclick="change_color_varbinary()" id="varbinary">varbinary</button>
+	<button type="button" onclick="change_color_image()" id="image">image</button>
+	<button type="button" onclick="change_color_smallmoney()" id="smallmoney">smallmoney</button>
+	<button type="button" onclick="change_color_money()" id="money">money</button>
+	<button type="button" onclick="change_color_real()" id="real">real</button>
+	<button type="button" onclick="change_color_datetimeoffset()" id="datetimeoffset">datetimeoffset</button>
+	<button type="button" onclick="change_color_datetime2()" id="datetime2">datetime2</button>
+	<button type="button" onclick="change_color_sql_variant()" id="sql_variant">sql variant</button>
+	<button type="button" onclick="change_color_uniqueidentifier()" id="uniqueidentifier">uniqueidentifier</button>
+	<button type="button" onclick="change_color_xml()" id="xml">xml</button>
+	<button type="button" onclick="change_color_cursor()" id="cursor">cursor</button>
 
-			
 </body>
 </html>
