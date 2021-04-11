@@ -1,11 +1,500 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SQL Terms</title>
-	<link rel="stylesheet" href="sql_aw.css">
+	<title>Project 2</title>
+	<link rel="stylesheet" href="proj2.css">
 </head>
 <body>
-	<script src = "sql_aw.js"></script>
+	<script src = "proj2.js"></script>
+
+	<button type="button" onclick="change_color_doctype()" id="doctype">doctype</button>
+	<button type="button" onclick="change_color_html()" id="html">html</button>
+	<button type="button" onclick="change_color_head()" id="head">head</button>
+	<button type="button" onclick="change_color_title()" id="title">title</button>
+	<button type="button" onclick="change_color_body()" id="body">body</button>
+	<button type="button" onclick="change_color_h1()" id="h1">h1</button>
+	<button type="button" onclick="change_color_p()" id="p">p</button>
+	<button type="button" onclick="change_color_br()" id="br">br</button>
+	<button type="button" onclick="change_color_hr()" id="hr">hr</button>
+	<button type="button" onclick="change_color_acronym()" id="acronym">acronym</button>
+	<button type="button" onclick="change_color_abbr()" id="abbr">abbr</button>
+	<button type="button" onclick="change_color_address()" id="address">address</button>
+	<button type="button" onclick="change_color_bodybdi()" id="bodybdi">bodybdi</button>
+	<button type="button" onclick="change_color_bdo()" id="bdo">bdo</button>
+	<button type="button" onclick="change_color_big()" id="big">big</button>
+	<button type="button" onclick="change_color_blockquote()" id="blockquote">blockquote</button>
+	<button type="button" onclick="change_color_center()" id="center">center</button>
+	<button type="button" onclick="change_color_cite()" id="cite">cite</button>
+	<button type="button" onclick="change_color_code()" id="code">code</button>
+	<button type="button" onclick="change_color_del()" id="del">del</button>
+	<button type="button" onclick="change_color_dfn()" id="dfn">dfn</button>
+	<button type="button" onclick="change_color_em()" id="em">em</button>
+	<button type="button" onclick="change_color_font()" id="font">font</button>
+	<button type="button" onclick="change_color_i()" id="i">i</button>
+	<button type="button" onclick="change_color_ins()" id="ins">ins</button>
+	<button type="button" onclick="change_color_kbd()" id="kbd">kbd</button>
+	<button type="button" onclick="change_color_mark()" id="mark">mark</button>
+	<button type="button" onclick="change_color_meter()" id="meter">meter</button>
+	<button type="button" onclick="change_color_pre()" id="pre">pre</button>
+	<button type="button" onclick="change_color_progress()" id="progress">progress</button>
+	<button type="button" onclick="change_color_q()" id="q">q</button>
+	<button type="button" onclick="change_color_rp()" id="rp">rp</button>
+	<button type="button" onclick="change_color_rt()" id="rt">rt</button>
+	<button type="button" onclick="change_color_ruby()" id="ruby">ruby</button>
+	<button type="button" onclick="change_color_s()" id="s">s</button>
+	<button type="button" onclick="change_color_samp()" id="samp">samp</button>
+	<button type="button" onclick="change_color_small()" id="small">small</button>
+	<button type="button" onclick="change_color_strike()" id="strike">strike</button>
+	<button type="button" onclick="change_color_strong()" id="strong">strong</button>
+	<button type="button" onclick="change_color_sub()" id="sub">sub</button>
+	<button type="button" onclick="change_color_template()" id="template">template</button>
+	<button type="button" onclick="change_color_tt()" id="tt">tt</button>
+	<button type="button" onclick="change_color_u()" id="u">u</button>
+	<button type="button" onclick="change_color_var()" id="var">var</button>
+	<button type="button" onclick="change_color_wbr()" id="wbr">wbr</button>
+	<button type="button" onclick="change_color_form()" id="form">form</button>
+	<button type="button" onclick="change_color_input()" id="input">input</button>
+	<button type="button" onclick="change_color_textarea()" id="textarea">textarea</button>
+	<button type="button" onclick="change_color_button()" id="button">button</button>
+	<button type="button" onclick="change_color_select()" id="select">select</button>
+	<button type="button" onclick="change_color_optgroup()" id="optgroup">optgroup</button>
+	<button type="button" onclick="change_color_option()" id="option">option</button>
+	<button type="button" onclick="change_color_label()" id="label">label</button>
+	<button type="button" onclick="change_color_input()" id="input">input</button>
+	<button type="button" onclick="change_color_fieldset()" id="fieldset">fieldset</button>
+	<button type="button" onclick="change_color_datalist()" id="datalist">datalist</button>
+	<button type="button" onclick="change_color_output()" id="output">output</button>
+	<button type="button" onclick="change_color_frame()" id="frame">frame</button>
+	<button type="button" onclick="change_color_frameset()" id="frameset">frameset</button>
+	<button type="button" onclick="change_color_noframes()" id="noframes">noframes</button>
+	<button type="button" onclick="change_color_iframe()" id="iframe">iframe</button>
+	<button type="button" onclick="change_color_img()" id="img">img</button>
+	<button type="button" onclick="change_color_map()" id="map">map</button>
+	<button type="button" onclick="change_color_area()" id="area">area</button>
+	<button type="button" onclick="change_color_canvas()" id="canvas">canvas</button>
+	<button type="button" onclick="change_color_figcaption()" id="figcaption">figcaption</button>
+	<button type="button" onclick="change_color_figure()" id="figure">figure</button>
+	<button type="button" onclick="change_color_picture()" id="picture">picture</button>
+	<button type="button" onclick="change_color_svg()" id="svg">svg</button>
+	<button type="button" onclick="change_color_audio()" id="audio">audio</button>
+	<button type="button" onclick="change_color_source()" id="source">source</button>
+	<button type="button" onclick="change_color_track()" id="track">track</button>
+	<button type="button" onclick="change_color_video()" id="video">video</button>
+	<button type="button" onclick="change_color_a()" id="a">a</button>
+	<button type="button" onclick="change_color_link()" id="link">link</button>
+	<button type="button" onclick="change_color_nav()" id="nav">nav</button>
+	<button type="button" onclick="change_color_ul()" id="ul">ul</button>
+	<button type="button" onclick="change_color_ol()" id="ol">ol</button>
+	<button type="button" onclick="change_color_li()" id="li">li</button>
+	<button type="button" onclick="change_color_dir()" id="dir">dir</button>
+	<button type="button" onclick="change_color_dl()" id="dl">dl</button>
+	<button type="button" onclick="change_color_dt()" id="dt">dt</button>
+	<button type="button" onclick="change_color_dd()" id="dd">dd</button>
+	<button type="button" onclick="change_color_table()" id="table">table</button>
+	<button type="button" onclick="change_color_caption()" id="caption">caption</button>
+	<button type="button" onclick="change_color_th()" id="th">th</button>
+	<button type="button" onclick="change_color_tr()" id="tr">tr</button>
+	<button type="button" onclick="change_color_td()" id="td">td</button>
+	<button type="button" onclick="change_color_thead()" id="thead">thead</button>
+	<button type="button" onclick="change_color_tbody()" id="tbody">tbody</button>
+	<button type="button" onclick="change_color_tfoot()" id="tfoot">tfoot</button>
+	<button type="button" onclick="change_color_col()" id="col">col</button>
+	<button type="button" onclick="change_color_colgroup()" id="colgroup">colgroup</button>
+	<button type="button" onclick="change_color_style()" id="style">style</button>
+	<button type="button" onclick="change_color_div()" id="div">div</button>
+	<button type="button" onclick="change_color_span()" id="span">span</button>
+	<button type="button" onclick="change_color_header()" id="header">header</button>
+	<button type="button" onclick="change_color_footer()" id="footer">footer</button>
+	<button type="button" onclick="change_color_main()" id="main">main</button>
+	<button type="button" onclick="change_color_section()" id="section">section</button>
+	<button type="button" onclick="change_color_article()" id="article">article</button>
+	<button type="button" onclick="change_color_aside()" id="aside">aside</button>
+	<button type="button" onclick="change_color_details()" id="details">details</button>
+	<button type="button" onclick="change_color_dialog()" id="dialog">dialog</button>
+	<button type="button" onclick="change_color_summary()" id="summary">summary</button>
+	<button type="button" onclick="change_color_data()" id="data">data</button>
+	<button type="button" onclick="change_color_head()" id="head">head</button>
+	<button type="button" onclick="change_color_meta()" id="meta">meta</button>
+	<button type="button" onclick="change_color_base()" id="base">base</button>
+	<button type="button" onclick="change_color_basefont()" id="basefont">basefont</button>
+	<button type="button" onclick="change_color_script()" id="script">script</button>
+	<button type="button" onclick="change_color_noscript()" id="noscript">noscript</button>
+	<button type="button" onclick="change_color_applet()" id="applet">applet</button>
+	<button type="button" onclick="change_color_embed()" id="embed">embed</button>
+	<button type="button" onclick="change_color_object()" id="object">object</button>
+	<button type="button" onclick="change_color_param()" id="param">param</button>
+
+<br><br>
+
+	<button type="button" onclick="change_color_align-content()" id="align-content">align-content</button>
+	<button type="button" onclick="change_color_align-items()" id="align-items">align-items</button>
+	<button type="button" onclick="change_color_align-self()" id="align-self">align-self</button>
+	<button type="button" onclick="change_color_all()" id="all">all</button>
+	<button type="button" onclick="change_color_animation()" id="animation">animation</button>
+	<button type="button" onclick="change_color_animation-delay()" id="animation-delay">animation-delay</button>
+	<button type="button" onclick="change_color_animation-direction()" id="animation-direction">animation-direction</button>
+	<button type="button" onclick="change_color_animation-duration()" id="animation-duration">animation-duration</button>
+	<button type="button" onclick="change_color_animation-fill-mode()" id="animation-fill-mode">animation-fill-mode</button>
+	<button type="button" onclick="change_color_animation-iteration-count()" id="animation-iteration-count">animation-iteration-count</button>
+	<button type="button" onclick="change_color_animation-name()" id="animation-name">animation-name</button>
+	<button type="button" onclick="change_color_animation-play-state()" id="animation-play-state">animation-play-state</button>
+	<button type="button" onclick="change_color_animation-timing-function()" id="animation-timing-function">animation-timing-function</button>
+	<button type="button" onclick="change_color_backface-visibility()" id="backface-visibility">backface-visibility</button>
+	<button type="button" onclick="change_color_background()" id="background">background</button>
+	<button type="button" onclick="change_color_background-attachment()" id="background-attachment">background-attachment</button>
+	<button type="button" onclick="change_color_background-blend-mode()" id="background-blend-mode">background-blend-mode</button>
+	<button type="button" onclick="change_color_background-clip()" id="background-clip">background-clip</button>
+	<button type="button" onclick="change_color_background-color()" id="background-color">background-color</button>
+	<button type="button" onclick="change_color_background-image()" id="background-image">background-image</button>
+	<button type="button" onclick="change_color_background-origin()" id="background-origin">background-origin</button>
+	<button type="button" onclick="change_color_background-position()" id="background-position">background-position</button>
+	<button type="button" onclick="change_color_background-repeat()" id="background-repeat">background-repeat</button>
+	<button type="button" onclick="change_color_background-size()" id="background-size">background-size</button>
+	<button type="button" onclick="change_color_border()" id="border">border</button>
+	<button type="button" onclick="change_color_border-bottom()" id="border-bottom">border-bottom</button>
+	<button type="button" onclick="change_color_border-bottom-color()" id="border-bottom-color">border-bottom-color</button>
+	<button type="button" onclick="change_color_border-bottom-left-radius()" id="border-bottom-left-radius">border-bottom-left-radius</button>
+	<button type="button" onclick="change_color_border-bottom-right-radius()" id="border-bottom-right-radius">border-bottom-right-radius</button>
+	<button type="button" onclick="change_color_border-bottom-style()" id="border-bottom-style">border-bottom-style</button>
+	<button type="button" onclick="change_color_border-bottom-width()" id="border-bottom-width">border-bottom-width</button>
+	<button type="button" onclick="change_color_border-collapse()" id="border-collapse">border-collapse</button>
+	<button type="button" onclick="change_color_border-color()" id="border-color">border-color</button>
+	<button type="button" onclick="change_color_border-image()" id="border-image">border-image</button>
+	<button type="button" onclick="change_color_border-image-outset()" id="border-image-outset">border-image-outset</button>
+	<button type="button" onclick="change_color_border-image-repeat()" id="border-image-repeat">border-image-repeat</button>
+	<button type="button" onclick="change_color_border-image-slice()" id="border-image-slice">border-image-slice</button>
+	<button type="button" onclick="change_color_border-image-source()" id="border-image-source">border-image-source</button>
+	<button type="button" onclick="change_color_border-image-width()" id="border-image-width">border-image-width</button>
+	<button type="button" onclick="change_color_border-left()" id="border-left">border-left</button>
+	<button type="button" onclick="change_color_border-left-color()" id="border-left-color">border-left-color</button>
+	<button type="button" onclick="change_color_border-left-style()" id="border-left-style">border-left-style</button>
+	<button type="button" onclick="change_color_border-left-width()" id="border-left-width">border-left-width</button>
+	<button type="button" onclick="change_color_border-radius()" id="border-radius">border-radius</button>
+	<button type="button" onclick="change_color_border-right()" id="border-right">border-right</button>
+	<button type="button" onclick="change_color_border-right-color()" id="border-right-color">border-right-color</button>
+	<button type="button" onclick="change_color_border-right-style()" id="border-right-style">border-right-style</button>
+	<button type="button" onclick="change_color_border-right-width()" id="border-right-width">border-right-width</button>
+	<button type="button" onclick="change_color_border-spacing()" id="border-spacing">border-spacing</button>
+	<button type="button" onclick="change_color_border-style()" id="border-style">border-style</button>
+	<button type="button" onclick="change_color_border-top()" id="border-top">border-top</button>
+	<button type="button" onclick="change_color_border-top-color()" id="border-top-color">border-top-color</button>
+	<button type="button" onclick="change_color_border-top-left-radius()" id="border-top-left-radius">border-top-left-radius</button>
+	<button type="button" onclick="change_color_border-top-right-radius()" id="border-top-right-radius">border-top-right-radius</button>
+	<button type="button" onclick="change_color_border-top-style()" id="border-top-style">border-top-style</button>
+	<button type="button" onclick="change_color_border-top-width()" id="border-top-width">border-top-width</button>
+	<button type="button" onclick="change_color_border-width()" id="border-width">border-width</button>
+	<button type="button" onclick="change_color_bottom()" id="bottom">bottom</button>
+	<button type="button" onclick="change_color_box-decoration-break()" id="box-decoration-break">box-decoration-break</button>
+	<button type="button" onclick="change_color_box-shadow()" id="box-shadow">box-shadow</button>
+	<button type="button" onclick="change_color_box-sizing()" id="box-sizing">box-sizing</button>
+	<button type="button" onclick="change_color_break-after()" id="break-after">break-after</button>
+	<button type="button" onclick="change_color_break-before()" id="break-before">break-before</button>
+	<button type="button" onclick="change_color_break-inside()" id="break-inside">break-inside</button>
+	<button type="button" onclick="change_color_caption-side()" id="caption-side">caption-side</button>
+	<button type="button" onclick="change_color_caret-color()" id="caret-color">caret-color</button>
+	<button type="button" onclick="change_color_@charset()" id="@charset">@charset</button>
+	<button type="button" onclick="change_color_clear()" id="clear">clear</button>
+	<button type="button" onclick="change_color_clip()" id="clip">clip</button>
+	<button type="button" onclick="change_color_clip-path()" id="clip-path">clip-path</button>
+	<button type="button" onclick="change_color_color()" id="color">color</button>
+	<button type="button" onclick="change_color_column-count()" id="column-count">column-count</button>
+	<button type="button" onclick="change_color_column-fill()" id="column-fill">column-fill</button>
+	<button type="button" onclick="change_color_column-gap()" id="column-gap">column-gap</button>
+	<button type="button" onclick="change_color_column-rule()" id="column-rule">column-rule</button>
+	<button type="button" onclick="change_color_column-rule-color()" id="column-rule-color">column-rule-color</button>
+	<button type="button" onclick="change_color_column-rule-style()" id="column-rule-style">column-rule-style</button>
+	<button type="button" onclick="change_color_column-rule-width()" id="column-rule-width">column-rule-width</button>
+	<button type="button" onclick="change_color_column-span()" id="column-span">column-span</button>
+	<button type="button" onclick="change_color_column-width()" id="column-width">column-width</button>
+	<button type="button" onclick="change_color_columns()" id="columns">columns</button>
+	<button type="button" onclick="change_color_content()" id="content">content</button>
+	<button type="button" onclick="change_color_counter-increment()" id="counter-increment">counter-increment</button>
+	<button type="button" onclick="change_color_counter-reset()" id="counter-reset">counter-reset</button>
+	<button type="button" onclick="change_color_cursor()" id="cursor">cursor</button>
+	<button type="button" onclick="change_color_direction()" id="direction">direction</button>
+	<button type="button" onclick="change_color_display()" id="display">display</button>
+	<button type="button" onclick="change_color_empty-cells()" id="empty-cells">empty-cells</button>
+	<button type="button" onclick="change_color_filter()" id="filter">filter</button>
+	<button type="button" onclick="change_color_flex()" id="flex">flex</button>
+	<button type="button" onclick="change_color_flex-basis()" id="flex-basis">flex-basis</button>
+	<button type="button" onclick="change_color_flex-direction()" id="flex-direction">flex-direction</button>
+	<button type="button" onclick="change_color_flex-flow()" id="flex-flow">flex-flow</button>
+	<button type="button" onclick="change_color_flex-grow()" id="flex-grow">flex-grow</button>
+	<button type="button" onclick="change_color_flex-shrink()" id="flex-shrink">flex-shrink</button>
+	<button type="button" onclick="change_color_flex-wrap()" id="flex-wrap">flex-wrap</button>
+	<button type="button" onclick="change_color_float()" id="float">float</button>
+	<button type="button" onclick="change_color_font()" id="font">font</button>
+	<button type="button" onclick="change_color_@font-face()" id="@font-face">@font-face</button>
+	<button type="button" onclick="change_color_font-family()" id="font-family">font-family</button>
+	<button type="button" onclick="change_color_font-feature-settings()" id="font-feature-settings">font-feature-settings</button>
+	<button type="button" onclick="change_color_font-kerning()" id="font-kerning">font-kerning</button>
+	<button type="button" onclick="change_color_font-size()" id="font-size">font-size</button>
+	<button type="button" onclick="change_color_font-size-adjust()" id="font-size-adjust">font-size-adjust</button>
+	<button type="button" onclick="change_color_font-stretch()" id="font-stretch">font-stretch</button>
+	<button type="button" onclick="change_color_font-style()" id="font-style">font-style</button>
+	<button type="button" onclick="change_color_font-variant()" id="font-variant">font-variant</button>
+	<button type="button" onclick="change_color_font-variant-caps()" id="font-variant-caps">font-variant-caps</button>
+	<button type="button" onclick="change_color_font-weight()" id="font-weight">font-weight</button>
+	<button type="button" onclick="change_color_gap()" id="gap">gap</button>
+	<button type="button" onclick="change_color_grid()" id="grid">grid</button>
+	<button type="button" onclick="change_color_grid-area()" id="grid-area">grid-area</button>
+	<button type="button" onclick="change_color_grid-auto-columns()" id="grid-auto-columns">grid-auto-columns</button>
+	<button type="button" onclick="change_color_grid-auto-flow()" id="grid-auto-flow">grid-auto-flow</button>
+	<button type="button" onclick="change_color_grid-auto-rows()" id="grid-auto-rows">grid-auto-rows</button>
+	<button type="button" onclick="change_color_grid-column()" id="grid-column">grid-column</button>
+	<button type="button" onclick="change_color_grid-column-end()" id="grid-column-end">grid-column-end</button>
+	<button type="button" onclick="change_color_grid-column-gap()" id="grid-column-gap">grid-column-gap</button>
+	<button type="button" onclick="change_color_grid-column-start()" id="grid-column-start">grid-column-start</button>
+	<button type="button" onclick="change_color_grid-gap()" id="grid-gap">grid-gap</button>
+	<button type="button" onclick="change_color_grid-row()" id="grid-row">grid-row</button>
+	<button type="button" onclick="change_color_grid-row-end()" id="grid-row-end">grid-row-end</button>
+	<button type="button" onclick="change_color_grid-row-gap()" id="grid-row-gap">grid-row-gap</button>
+	<button type="button" onclick="change_color_grid-row-start()" id="grid-row-start">grid-row-start</button>
+	<button type="button" onclick="change_color_grid-template()" id="grid-template">grid-template</button>
+	<button type="button" onclick="change_color_grid-template-areas()" id="grid-template-areas">grid-template-areas</button>
+	<button type="button" onclick="change_color_grid-template-columns()" id="grid-template-columns">grid-template-columns</button>
+	<button type="button" onclick="change_color_grid-template-rows()" id="grid-template-rows">grid-template-rows</button>
+	<button type="button" onclick="change_color_hanging-punctuation()" id="hanging-punctuation">hanging-punctuation</button>
+	<button type="button" onclick="change_color_height()" id="height">height</button>
+	<button type="button" onclick="change_color_hyphens()" id="hyphens">hyphens</button>
+	<button type="button" onclick="change_color_@import()" id="@import">@import</button>
+	<button type="button" onclick="change_color_isolation()" id="isolation">isolation</button>
+	<button type="button" onclick="change_color_justify-content()" id="justify-content">justify-content</button>
+	<button type="button" onclick="change_color_@keyframes()" id="@keyframes">@keyframes</button>
+	<button type="button" onclick="change_color_left()" id="left">left</button>
+	<button type="button" onclick="change_color_letter-spacing()" id="letter-spacing">letter-spacing</button>
+	<button type="button" onclick="change_color_line-height()" id="line-height">line-height</button>
+	<button type="button" onclick="change_color_list-style()" id="list-style">list-style</button>
+	<button type="button" onclick="change_color_list-style-image()" id="list-style-image">list-style-image</button>
+	<button type="button" onclick="change_color_list-style-position()" id="list-style-position">list-style-position</button>
+	<button type="button" onclick="change_color_list-style-type()" id="list-style-type">list-style-type</button>
+	<button type="button" onclick="change_color_margin()" id="margin">margin</button>
+	<button type="button" onclick="change_color_margin-bottom()" id="margin-bottom">margin-bottom</button>
+	<button type="button" onclick="change_color_margin-left()" id="margin-left">margin-left</button>
+	<button type="button" onclick="change_color_margin-right()" id="margin-right">margin-right</button>
+	<button type="button" onclick="change_color_margin-top()" id="margin-top">margin-top</button>
+	<button type="button" onclick="change_color_max-height()" id="max-height">max-height</button>
+	<button type="button" onclick="change_color_max-width()" id="max-width">max-width</button>
+	<button type="button" onclick="change_color_@media()" id="@media">@media</button>
+	<button type="button" onclick="change_color_min-height()" id="min-height">min-height</button>
+	<button type="button" onclick="change_color_min-width()" id="min-width">min-width</button>
+	<button type="button" onclick="change_color_mix-blend-mode()" id="mix-blend-mode">mix-blend-mode</button>
+	<button type="button" onclick="change_color_object-fit()" id="object-fit">object-fit</button>
+	<button type="button" onclick="change_color_object-position()" id="object-position">object-position</button>
+	<button type="button" onclick="change_color_opacity()" id="opacity">opacity</button>
+	<button type="button" onclick="change_color_order()" id="order">order</button>
+	<button type="button" onclick="change_color_outline()" id="outline">outline</button>
+	<button type="button" onclick="change_color_outline-color()" id="outline-color">outline-color</button>
+	<button type="button" onclick="change_color_outline-offset()" id="outline-offset">outline-offset</button>
+	<button type="button" onclick="change_color_outline-style()" id="outline-style">outline-style</button>
+	<button type="button" onclick="change_color_outline-width()" id="outline-width">outline-width</button>
+	<button type="button" onclick="change_color_overflow()" id="overflow">overflow</button>
+	<button type="button" onclick="change_color_overflow-x()" id="overflow-x">overflow-x</button>
+	<button type="button" onclick="change_color_overflow-y()" id="overflow-y">overflow-y</button>
+	<button type="button" onclick="change_color_padding()" id="padding">padding</button>
+	<button type="button" onclick="change_color_padding-bottom()" id="padding-bottom">padding-bottom</button>
+	<button type="button" onclick="change_color_padding-left()" id="padding-left">padding-left</button>
+	<button type="button" onclick="change_color_padding-right()" id="padding-right">padding-right</button>
+	<button type="button" onclick="change_color_padding-top()" id="padding-top">padding-top</button>
+	<button type="button" onclick="change_color_page-break-after()" id="page-break-after">page-break-after</button>
+	<button type="button" onclick="change_color_page-break-before()" id="page-break-before">page-break-before</button>
+	<button type="button" onclick="change_color_page-break-inside()" id="page-break-inside">page-break-inside</button>
+	<button type="button" onclick="change_color_perspective()" id="perspective">perspective</button>
+	<button type="button" onclick="change_color_perspective-origin()" id="perspective-origin">perspective-origin</button>
+	<button type="button" onclick="change_color_pointer-events()" id="pointer-events">pointer-events</button>
+	<button type="button" onclick="change_color_position()" id="position">position</button>
+	<button type="button" onclick="change_color_quotes()" id="quotes">quotes</button>
+	<button type="button" onclick="change_color_resize()" id="resize">resize</button>
+	<button type="button" onclick="change_color_right()" id="right">right</button>
+	<button type="button" onclick="change_color_row-gap()" id="row-gap">row-gap</button>
+	<button type="button" onclick="change_color_scroll-behavior()" id="scroll-behavior">scroll-behavior</button>
+	<button type="button" onclick="change_color_tab-size()" id="tab-size">tab-size</button>
+	<button type="button" onclick="change_color_table-layout()" id="table-layout">table-layout</button>
+	<button type="button" onclick="change_color_text-align()" id="text-align">text-align</button>
+	<button type="button" onclick="change_color_text-align-last()" id="text-align-last">text-align-last</button>
+	<button type="button" onclick="change_color_text-decoration()" id="text-decoration">text-decoration</button>
+	<button type="button" onclick="change_color_text-decoration-color()" id="text-decoration-color">text-decoration-color</button>
+	<button type="button" onclick="change_color_text-decoration-line()" id="text-decoration-line">text-decoration-line</button>
+	<button type="button" onclick="change_color_text-decoration-style()" id="text-decoration-style">text-decoration-style</button>
+	<button type="button" onclick="change_color_text-indent()" id="text-indent">text-indent</button>
+	<button type="button" onclick="change_color_text-justify()" id="text-justify">text-justify</button>
+	<button type="button" onclick="change_color_text-overflow()" id="text-overflow">text-overflow</button>
+	<button type="button" onclick="change_color_text-shadow()" id="text-shadow">text-shadow</button>
+	<button type="button" onclick="change_color_text-transform()" id="text-transform">text-transform</button>
+	<button type="button" onclick="change_color_top()" id="top">top</button>
+	<button type="button" onclick="change_color_transform()" id="transform">transform</button>
+	<button type="button" onclick="change_color_transform-origin()" id="transform-origin">transform-origin</button>
+	<button type="button" onclick="change_color_transform-style()" id="transform-style">transform-style</button>
+	<button type="button" onclick="change_color_transition()" id="transition">transition</button>
+	<button type="button" onclick="change_color_transition-delay()" id="transition-delay">transition-delay</button>
+	<button type="button" onclick="change_color_transition-duration()" id="transition-duration">transition-duration</button>
+	<button type="button" onclick="change_color_transition-property()" id="transition-property">transition-property</button>
+	<button type="button" onclick="change_color_transition-timing-function()" id="transition-timing-function">transition-timing-function</button>
+	<button type="button" onclick="change_color_unicode-bidi()" id="unicode-bidi">unicode-bidi</button>
+	<button type="button" onclick="change_color_user-select()" id="user-select">user-select</button>
+	<button type="button" onclick="change_color_vertical-align()" id="vertical-align">vertical-align</button>
+	<button type="button" onclick="change_color_visibility()" id="visibility">visibility</button>
+	<button type="button" onclick="change_color_white-space()" id="white-space">white-space</button>
+	<button type="button" onclick="change_color_width()" id="width">width</button>
+	<button type="button" onclick="change_color_word-break()" id="word-break">word-break</button>
+	<button type="button" onclick="change_color_word-spacing()" id="word-spacing">word-spacing</button>
+	<button type="button" onclick="change_color_word-wrap()" id="word-wrap">word-wrap</button>
+	<button type="button" onclick="change_color_writing-mode()" id="writing-mode">writing-mode</button>
+	<button type="button" onclick="change_color_z-index()" id="z-index">z-index</button>
+
+<br><br>
+
+	<button type="button" onclick="change_color_js_output()" id="js_output">js output</button>
+	<button type="button" onclick="change_color_js_statements()" id="js_statements">js statements</button>
+	<button type="button" onclick="change_color_js_syntax()" id="js_syntax">js syntax</button>
+	<button type="button" onclick="change_color_js_comments()" id="js_comments">js comments</button>
+	<button type="button" onclick="change_color_js_variables()" id="js_variables">js variables</button>
+	<button type="button" onclick="change_color_js_let()" id="js_let">js let</button>
+	<button type="button" onclick="change_color_js_const()" id="js_const">js const</button>
+	<button type="button" onclick="change_color_js_operators()" id="js_operators">js operators</button>
+	<button type="button" onclick="change_color_js_arithmetic()" id="js_arithmetic">js arithmetic</button>
+	<button type="button" onclick="change_color_js_assignment()" id="js_assignment">js assignment</button>
+	<button type="button" onclick="change_color_js_data_types()" id="js_data_types">js data types</button>
+	<button type="button" onclick="change_color_js_functions()" id="js_functions">js functions</button>
+	<button type="button" onclick="change_color_js_objects()" id="js_objects">js objects</button>
+	<button type="button" onclick="change_color_js_events()" id="js_events">js events</button>
+	<button type="button" onclick="change_color_js_strings()" id="js_strings">js strings</button>
+	<button type="button" onclick="change_color_js_string_methods()" id="js_string_methods">js string methods</button>
+	<button type="button" onclick="change_color_js_numbers()" id="js_numbers">js numbers</button>
+	<button type="button" onclick="change_color_js_number_methods()" id="js_number_methods">js number methods</button>
+	<button type="button" onclick="change_color_js_arrays()" id="js_arrays">js arrays</button>
+	<button type="button" onclick="change_color_js_array_methods()" id="js_array_methods">js array methods</button>
+	<button type="button" onclick="change_color_js_array_sort()" id="js_array_sort">js array sort</button>
+	<button type="button" onclick="change_color_js_array_iteration()" id="js_array_iteration">js array iteration</button>
+	<button type="button" onclick="change_color_js_dates()" id="js_dates">js dates</button>
+	<button type="button" onclick="change_color_js_date_formats()" id="js_date_formats">js date formats</button>
+	<button type="button" onclick="change_color_js_date_get_methods()" id="js_date_get_methods">js date get methods</button>
+	<button type="button" onclick="change_color_js_date_set_methods()" id="js_date_set_methods">js date set methods</button>
+	<button type="button" onclick="change_color_js_math()" id="js_math">js math</button>
+	<button type="button" onclick="change_color_js_random()" id="js_random">js random</button>
+	<button type="button" onclick="change_color_js_booleans()" id="js_booleans">js booleans</button>
+	<button type="button" onclick="change_color_js_comparisons()" id="js_comparisons">js comparisons</button>
+	<button type="button" onclick="change_color_js_conditions()" id="js_conditions">js conditions</button>
+	<button type="button" onclick="change_color_js_switch()" id="js_switch">js switch</button>
+	<button type="button" onclick="change_color_js_loop_for()" id="js_loop_for">js loop for</button>
+	<button type="button" onclick="change_color_js_loop_for_in()" id="js_loop_for_in">js loop for in</button>
+	<button type="button" onclick="change_color_js_loop_for_of()" id="js_loop_for_of">js loop for of</button>
+	<button type="button" onclick="change_color_js_loop_while()" id="js_loop_while">js loop while</button>
+	<button type="button" onclick="change_color_js_break()" id="js_break">js break</button>
+	<button type="button" onclick="change_color_js_type_conversion()" id="js_type_conversion">js type conversion</button>
+	<button type="button" onclick="change_color_js_bitwise()" id="js_bitwise">js bitwise</button>
+	<button type="button" onclick="change_color_js_regexp()" id="js_regexp">js regexp</button>
+	<button type="button" onclick="change_color_js_errors()" id="js_errors">js errors</button>
+	<button type="button" onclick="change_color_js_scope()" id="js_scope">js scope</button>
+	<button type="button" onclick="change_color_js_hoisting()" id="js_hoisting">js hoisting</button>
+	<button type="button" onclick="change_color_js_strict_mode()" id="js_strict_mode">js strict mode</button>
+	<button type="button" onclick="change_color_js_this_keyword()" id="js_this_keyword">js this keyword</button>
+	<button type="button" onclick="change_color_js_arrow_function()" id="js_arrow_function">js arrow function</button>
+	<button type="button" onclick="change_color_js_classes()" id="js_classes">js classes</button>
+	<button type="button" onclick="change_color_js_json()" id="js_json">js json</button>
+	<button type="button" onclick="change_color_js_debugging()" id="js_debugging">js debugging</button>
+	<button type="button" onclick="change_color_js_style_guide()" id="js_style_guide">js style guide</button>
+	<button type="button" onclick="change_color_js_best_practices()" id="js_best_practices">js best practices</button>
+	<button type="button" onclick="change_color_js_mistakes()" id="js_mistakes">js mistakes</button>
+	<button type="button" onclick="change_color_js_performance()" id="js_performance">js performance</button>
+	<button type="button" onclick="change_color_js_reserved_words()" id="js_reserved_words">js reserved words</button>
+	<button type="button" onclick="change_color_js_versions()" id="js_versions">js versions</button>
+	<button type="button" onclick="change_color_js_versions()" id="js_versions">js versions</button>
+	<button type="button" onclick="change_color_js_2009_(es5)()" id="js_2009_(es5)">js 2009 (es5)</button>
+	<button type="button" onclick="change_color_js_2015_(es6)()" id="js_2015_(es6)">js 2015 (es6)</button>
+	<button type="button" onclick="change_color_js_2016()" id="js_2016">js 2016</button>
+	<button type="button" onclick="change_color_js_2017()" id="js_2017">js 2017</button>
+	<button type="button" onclick="change_color_js_2018()" id="js_2018">js 2018</button>
+	<button type="button" onclick="change_color_js_ie_/_edge()" id="js_ie_/_edge">js ie / edge</button>
+	<button type="button" onclick="change_color_js_history()" id="js_history">js history</button>
+	<button type="button" onclick="change_color_js_forms()" id="js_forms">js forms</button>
+	<button type="button" onclick="change_color_js_forms()" id="js_forms">js forms</button>
+	<button type="button" onclick="change_color_forms_api()" id="forms_api">forms api</button>
+	<button type="button" onclick="change_color_js_objects()" id="js_objects">js objects</button>
+	<button type="button" onclick="change_color_object_definitions()" id="object_definitions">object definitions</button>
+	<button type="button" onclick="change_color_object_properties()" id="object_properties">object properties</button>
+	<button type="button" onclick="change_color_object_methods()" id="object_methods">object methods</button>
+	<button type="button" onclick="change_color_object_display()" id="object_display">object display</button>
+	<button type="button" onclick="change_color_object_accessors()" id="object_accessors">object accessors</button>
+	<button type="button" onclick="change_color_object_constructors()" id="object_constructors">object constructors</button>
+	<button type="button" onclick="change_color_object_prototypes()" id="object_prototypes">object prototypes</button>
+	<button type="button" onclick="change_color_object_ecmascript_5()" id="object_ecmascript_5">object ecmascript 5</button>
+	<button type="button" onclick="change_color_js_functions()" id="js_functions">js functions</button>
+	<button type="button" onclick="change_color_function_definitions()" id="function_definitions">function definitions</button>
+	<button type="button" onclick="change_color_function_parameters()" id="function_parameters">function parameters</button>
+	<button type="button" onclick="change_color_function_invocation()" id="function_invocation">function invocation</button>
+	<button type="button" onclick="change_color_function_call()" id="function_call">function call</button>
+	<button type="button" onclick="change_color_function_apply()" id="function_apply">function apply</button>
+	<button type="button" onclick="change_color_function_closures()" id="function_closures">function closures</button>
+	<button type="button" onclick="change_color_js_classes()" id="js_classes">js classes</button>
+	<button type="button" onclick="change_color_class_intro()" id="class_intro">class intro</button>
+	<button type="button" onclick="change_color_class_inheritance()" id="class_inheritance">class inheritance</button>
+	<button type="button" onclick="change_color_class_static()" id="class_static">class static</button>
+	<button type="button" onclick="change_color_js_async()" id="js_async">js async</button>
+	<button type="button" onclick="change_color_js_callbacks()" id="js_callbacks">js callbacks</button>
+	<button type="button" onclick="change_color_js_asynchronous()" id="js_asynchronous">js asynchronous</button>
+	<button type="button" onclick="change_color_js_promises()" id="js_promises">js promises</button>
+	<button type="button" onclick="change_color_js_async/await()" id="js_async/await">js async/await</button>
+	<button type="button" onclick="change_color_js_html_dom()" id="js_html_dom">js html dom</button>
+	<button type="button" onclick="change_color_dom_intro()" id="dom_intro">dom intro</button>
+	<button type="button" onclick="change_color_dom_methods()" id="dom_methods">dom methods</button>
+	<button type="button" onclick="change_color_dom_document()" id="dom_document">dom document</button>
+	<button type="button" onclick="change_color_dom_elements()" id="dom_elements">dom elements</button>
+	<button type="button" onclick="change_color_dom_html()" id="dom_html">dom html</button>
+	<button type="button" onclick="change_color_dom_css()" id="dom_css">dom css</button>
+	<button type="button" onclick="change_color_dom_animations()" id="dom_animations">dom animations</button>
+	<button type="button" onclick="change_color_dom_events()" id="dom_events">dom events</button>
+	<button type="button" onclick="change_color_dom_event_listener()" id="dom_event_listener">dom event listener</button>
+	<button type="button" onclick="change_color_dom_navigation()" id="dom_navigation">dom navigation</button>
+	<button type="button" onclick="change_color_dom_nodes()" id="dom_nodes">dom nodes</button>
+	<button type="button" onclick="change_color_dom_collections()" id="dom_collections">dom collections</button>
+	<button type="button" onclick="change_color_dom_node_lists()" id="dom_node_lists">dom node lists</button>
+	<button type="button" onclick="change_color_js_browser_bom()" id="js_browser_bom">js browser bom</button>
+	<button type="button" onclick="change_color_js_window()" id="js_window">js window</button>
+	<button type="button" onclick="change_color_js_screen()" id="js_screen">js screen</button>
+	<button type="button" onclick="change_color_js_location()" id="js_location">js location</button>
+	<button type="button" onclick="change_color_js_history()" id="js_history">js history</button>
+	<button type="button" onclick="change_color_js_navigator()" id="js_navigator">js navigator</button>
+	<button type="button" onclick="change_color_js_popup_alert()" id="js_popup_alert">js popup alert</button>
+	<button type="button" onclick="change_color_js_timing()" id="js_timing">js timing</button>
+	<button type="button" onclick="change_color_js_cookies()" id="js_cookies">js cookies</button>
+	<button type="button" onclick="change_color_js_ajax()" id="js_ajax">js ajax</button>
+	<button type="button" onclick="change_color_ajax_intro()" id="ajax_intro">ajax intro</button>
+	<button type="button" onclick="change_color_ajax_xmlhttp()" id="ajax_xmlhttp">ajax xmlhttp</button>
+	<button type="button" onclick="change_color_ajax_request()" id="ajax_request">ajax request</button>
+	<button type="button" onclick="change_color_ajax_response()" id="ajax_response">ajax response</button>
+	<button type="button" onclick="change_color_ajax_xml_file()" id="ajax_xml_file">ajax xml file</button>
+	<button type="button" onclick="change_color_ajax_php()" id="ajax_php">ajax php</button>
+	<button type="button" onclick="change_color_ajax_asp()" id="ajax_asp">ajax asp</button>
+	<button type="button" onclick="change_color_ajax_database()" id="ajax_database">ajax database</button>
+	<button type="button" onclick="change_color_ajax_applications()" id="ajax_applications">ajax applications</button>
+	<button type="button" onclick="change_color_ajax_examples()" id="ajax_examples">ajax examples</button>
+	<button type="button" onclick="change_color_js_json()" id="js_json">js json</button>
+	<button type="button" onclick="change_color_json_intro()" id="json_intro">json intro</button>
+	<button type="button" onclick="change_color_json_syntax()" id="json_syntax">json syntax</button>
+	<button type="button" onclick="change_color_json_vs_xml()" id="json_vs_xml">json vs xml</button>
+	<button type="button" onclick="change_color_json_data_types()" id="json_data_types">json data types</button>
+	<button type="button" onclick="change_color_json_parse()" id="json_parse">json parse</button>
+	<button type="button" onclick="change_color_json_stringify()" id="json_stringify">json stringify</button>
+	<button type="button" onclick="change_color_json_objects()" id="json_objects">json objects</button>
+	<button type="button" onclick="change_color_json_arrays()" id="json_arrays">json arrays</button>
+	<button type="button" onclick="change_color_json_php()" id="json_php">json php</button>
+	<button type="button" onclick="change_color_json_html()" id="json_html">json html</button>
+	<button type="button" onclick="change_color_json_jsonp()" id="json_jsonp">json jsonp</button>
+	<button type="button" onclick="change_color_js_web_apis()" id="js_web_apis">js web apis</button>
+	<button type="button" onclick="change_color_web_api_intro()" id="web_api_intro">web api intro</button>
+	<button type="button" onclick="change_color_web_history_api()" id="web_history_api">web history api</button>
+	<button type="button" onclick="change_color_web_storage_api()" id="web_storage_api">web storage api</button>
+	<button type="button" onclick="change_color_web_worker_api()" id="web_worker_api">web worker api</button>
+	<button type="button" onclick="change_color_web_fetch_api()" id="web_fetch_api">web fetch api</button>
+	<button type="button" onclick="change_color_web_geolocation_api()" id="web_geolocation_api">web geolocation api</button>
+	<button type="button" onclick="change_color_js_vs_jquery()" id="js_vs_jquery">js vs jquery</button>
+	<button type="button" onclick="change_color_jquery_selectors()" id="jquery_selectors">jquery selectors</button>
+	<button type="button" onclick="change_color_jquery_html()" id="jquery_html">jquery html</button>
+	<button type="button" onclick="change_color_jquery_css()" id="jquery_css">jquery css</button>
+	<button type="button" onclick="change_color_jquery_dom()" id="jquery_dom">jquery dom</button>
+
+<br><br>
 
 	<button type="button" onclick="change_color_select()" id="select">select</button>
 	<button type="button" onclick="change_color_update()" id="update">update</button>
@@ -143,6 +632,9 @@
 	<button type="button" onclick="change_color_uniqueidentifier()" id="uniqueidentifier">uniqueidentifier</button>
 	<button type="button" onclick="change_color_xml()" id="xml">xml</button>
 	<button type="button" onclick="change_color_cursor()" id="cursor">cursor</button>
+
+<br><br>
+
 
 </body>
 </html>
