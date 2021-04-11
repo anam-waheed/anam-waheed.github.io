@@ -1,2 +1,9 @@
-body {	background: Black;}
-button {	background: DeepSkyBlue;	border-radius: 10px;	/*font-family: Copperplate, Papyrus;*/	font-family: "Times New Roman", Times, serif;}
+body {
+	background: Black;
+}
+button {
+	background: DeepSkyBlue;
+	border-radius: 10px;
+	/*font-family: Copperplate, Papyrus;*/
+	font-family: "Times New Roman", Times, serif;
+}
